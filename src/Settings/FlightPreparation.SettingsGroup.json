@@ -1,0 +1,90 @@
+{
+    "version": 1,
+    "fileType": "FactMetaData",
+    "QGC.MetaData.Facts": [
+        {
+            "name": "showPreparation",
+            "shortDesc": "Show the read-only preparation tool in Fly View.",
+            "type": "bool",
+            "default": true,
+            "label": "Show Flight Preparation Tool",
+            "keywords": "flight preparation,briefing"
+        },
+        {
+            "name": "minimumBatteryPercent",
+            "shortDesc": "Warn when any reported battery is below this charge.",
+            "type": "uint32",
+            "units": "%",
+            "default": 40,
+            "min": 1,
+            "max": 100,
+            "label": "Minimum battery charge",
+            "keywords": "flight preparation,battery"
+        },
+        {
+            "name": "minimumSatellites",
+            "shortDesc": "Minimum satellites when a GPS check is required.",
+            "type": "uint32",
+            "default": 8,
+            "min": 4,
+            "max": 99,
+            "label": "Minimum GPS satellites",
+            "keywords": "flight preparation,gps,satellites"
+        },
+        {
+            "name": "maximumHdop",
+            "shortDesc": "Maximum horizontal dilution of precision when GPS is required.",
+            "type": "double",
+            "default": 2,
+            "min": 0.5,
+            "max": 20,
+            "decimalPlaces": 1,
+            "label": "Maximum GPS HDOP",
+            "keywords": "flight preparation,gps,hdop"
+        },
+        {
+            "name": "maximumPacketLoss",
+            "shortDesc": "Warn above this cumulative MAVLink packet loss percentage.",
+            "type": "double",
+            "units": "%",
+            "default": 10,
+            "min": 0,
+            "max": 100,
+            "decimalPlaces": 1,
+            "label": "Maximum telemetry loss",
+            "keywords": "flight preparation,telemetry,packet loss"
+        },
+        {
+            "name": "requireGps",
+            "shortDesc": "Check GPS even when the vehicle does not currently require a fix.",
+            "type": "bool",
+            "default": true,
+            "label": "Require GPS in preparation",
+            "keywords": "flight preparation,gps"
+        },
+        {
+            "name": "requireHome",
+            "shortDesc": "Warn until the vehicle reports a valid home coordinate.",
+            "type": "bool",
+            "default": true,
+            "label": "Require a home position",
+            "keywords": "flight preparation,home"
+        },
+        {
+            "name": "requireMission",
+            "shortDesc": "Warn when the active vehicle has no loaded mission.",
+            "type": "bool",
+            "default": false,
+            "label": "Require a loaded mission",
+            "keywords": "flight preparation,mission"
+        },
+        {
+            "name": "requireRc",
+            "shortDesc": "Check the receiver status reported by the autopilot.",
+            "type": "bool",
+            "default": false,
+            "label": "Require a healthy RC receiver",
+            "keywords": "flight preparation,rc,radio"
+        }
+    ]
+}

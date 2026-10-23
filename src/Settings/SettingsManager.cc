@@ -10,6 +10,7 @@
 #include "FirmwareUpgradeSettings.h"
 #include "FlightMapSettings.h"
 #include "FlightModeSettings.h"
+#include "FlightPreparationSettings.h"
 #include "FlyViewSettings.h"
 #include "GimbalControllerSettings.h"
 #include "MapsSettings.h"
@@ -63,6 +64,7 @@ void SettingsManager::init()
     _firmwareUpgradeSettings = new FirmwareUpgradeSettings(this);
     _flightMapSettings = new FlightMapSettings(this);
     _flightModeSettings = new FlightModeSettings(this);
+    _flightPreparationSettings = new FlightPreparationSettings(this);
     _flyViewSettings = new FlyViewSettings(this);
     _gimbalControllerSettings = new GimbalControllerSettings(this);
     _mapsSettings = new MapsSettings(this);
@@ -90,6 +92,7 @@ MavlinkActionsSettings *SettingsManager::mavlinkActionsSettings() const { return
 FirmwareUpgradeSettings *SettingsManager::firmwareUpgradeSettings() const { return _firmwareUpgradeSettings; }
 FlightMapSettings *SettingsManager::flightMapSettings() const { return _flightMapSettings; }
 FlightModeSettings *SettingsManager::flightModeSettings() const { return _flightModeSettings; }
+FlightPreparationSettings *SettingsManager::flightPreparationSettings() const { return _flightPreparationSettings; }
 FlyViewSettings *SettingsManager::flyViewSettings() const { return _flyViewSettings; }
 GimbalControllerSettings *SettingsManager::gimbalControllerSettings() const { return _gimbalControllerSettings; }
 MapsSettings *SettingsManager::mapsSettings() const { return _mapsSettings; }

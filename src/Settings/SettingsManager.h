@@ -14,6 +14,7 @@ class MavlinkActionsSettings;
 class FirmwareUpgradeSettings;
 class FlightMapSettings;
 class FlightModeSettings;
+class FlightPreparationSettings;
 class FlyViewSettings;
 class GimbalControllerSettings;
 class MapsSettings;
@@ -47,6 +48,7 @@ class SettingsManager : public QObject
     Q_MOC_INCLUDE("FirmwareUpgradeSettings.h")
     Q_MOC_INCLUDE("FlightMapSettings.h")
     Q_MOC_INCLUDE("FlightModeSettings.h")
+    Q_MOC_INCLUDE("FlightPreparationSettings.h")
     Q_MOC_INCLUDE("FlyViewSettings.h")
     Q_MOC_INCLUDE("GimbalControllerSettings.h")
     Q_MOC_INCLUDE("MapsSettings.h")
@@ -71,6 +73,7 @@ class SettingsManager : public QObject
     Q_PROPERTY(QObject *firmwareUpgradeSettings         READ firmwareUpgradeSettings        CONSTANT)
     Q_PROPERTY(QObject *flightMapSettings               READ flightMapSettings              CONSTANT)
     Q_PROPERTY(QObject *flightModeSettings              READ flightModeSettings             CONSTANT)
+    Q_PROPERTY(QObject *flightPreparationSettings       READ flightPreparationSettings      CONSTANT)
     Q_PROPERTY(QObject *flyViewSettings                 READ flyViewSettings                CONSTANT)
     Q_PROPERTY(QObject *gimbalControllerSettings        READ gimbalControllerSettings       CONSTANT)
     Q_PROPERTY(QObject *mapsSettings                    READ mapsSettings                   CONSTANT)
@@ -109,6 +112,7 @@ public:
     FirmwareUpgradeSettings *firmwareUpgradeSettings() const;
     FlightMapSettings *flightMapSettings() const;
     FlightModeSettings *flightModeSettings() const;
+    FlightPreparationSettings *flightPreparationSettings() const;
     FlyViewSettings *flyViewSettings() const;
     GimbalControllerSettings *gimbalControllerSettings() const;
     MapsSettings *mapsSettings() const;
@@ -137,6 +141,7 @@ private:
     FirmwareUpgradeSettings *_firmwareUpgradeSettings = nullptr;
     FlightMapSettings *_flightMapSettings = nullptr;
     FlightModeSettings *_flightModeSettings = nullptr;
+    FlightPreparationSettings *_flightPreparationSettings = nullptr;
     FlyViewSettings *_flyViewSettings = nullptr;
     GimbalControllerSettings *_gimbalControllerSettings = nullptr;
     MapsSettings *_mapsSettings = nullptr;

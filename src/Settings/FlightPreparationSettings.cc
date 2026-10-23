@@ -1,0 +1,15 @@
+#include "FlightPreparationSettings.h"
+
+DECLARE_SETTINGGROUP(FlightPreparation, "FlightPreparation")
+{
+}
+
+DECLARE_SETTINGSFACT(FlightPreparationSettings, showPreparation)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, minimumBatteryPercent)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, minimumSatellites)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, maximumHdop)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, maximumPacketLoss)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, requireGps)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, requireHome)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, requireMission)
+DECLARE_SETTINGSFACT(FlightPreparationSettings, requireRc)

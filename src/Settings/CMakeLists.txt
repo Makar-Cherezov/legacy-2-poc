@@ -21,6 +21,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         FlightMapSettings.h
         FlightModeSettings.cc
         FlightModeSettings.h
+        FlightPreparationSettings.cc
+        FlightPreparationSettings.h
         FlyViewSettings.cc
         FlyViewSettings.h
         GimbalControllerSettings.cc
