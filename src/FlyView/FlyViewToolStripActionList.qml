@@ -8,10 +8,12 @@ ToolStripActionList {
     id: _root
 
     signal displayPreFlightChecklist
+    signal displayFlightPreparation
 
     model: [
         Viewer3DShowAction { },
         PreFlightCheckListShowAction { onTriggered: displayPreFlightChecklist() },
+        FlightPreparationShowAction { onTriggered: displayFlightPreparation() },
         GuidedActionTakeoff { },
         GuidedActionLand { },
         GuidedActionRTL { },

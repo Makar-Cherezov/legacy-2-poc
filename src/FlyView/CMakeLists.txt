@@ -18,6 +18,29 @@ qt_add_qml_module(FlyViewModule
         FlightDisplayViewQtMultimedia.qml
         FlightDisplayViewUVC.qml
         FlightDisplayViewVideo.qml
+        FlightPreparationSnapshot.js
+        FlightPreparationRules.js
+        FlightPreparationChecklist.js
+        FlightPreparationReport.js
+        FlightPreparationModel.qml
+        FlightPreparationBadge.qml
+        FlightPreparationStatusCard.qml
+        FlightPreparationMetric.qml
+        FlightPreparationSection.qml
+        FlightPreparationSummary.qml
+        FlightPreparationOverview.qml
+        FlightPreparationConnectionDetails.qml
+        FlightPreparationBatteryDetails.qml
+        FlightPreparationManualCheck.qml
+        FlightPreparationSiteChecks.qml
+        FlightPreparationPosition.qml
+        FlightPreparationMission.qml
+        FlightPreparationNotes.qml
+        FlightPreparationThreshold.qml
+        FlightPreparationSettingsView.qml
+        FlightPreparationResetDialog.qml
+        FlightPreparationPopup.qml
+        FlightPreparationShowAction.qml
         FlyView.qml
         FlyViewAdditionalActionsButton.qml
         FlyViewAdditionalActionsList.qml

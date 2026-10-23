@@ -9,7 +9,7 @@
     "groups": [
         {
             "heading": "General",
-            "keywords": ["checklist", "preflight", "multi vehicle", "center map", "log replay", "camera control", "home position", "mission popup"],
+            "keywords": ["checklist", "preflight", "multi vehicle", "center map", "log replay", "camera control", "flight preparation", "map scale", "telemetry", "home position", "mission popup"],
             "controls": [
                 {
                     "setting": "appSettings.useChecklist",
@@ -31,6 +31,18 @@
                 },
                 {
                     "setting": "flyViewSettings.showSimpleCameraControl"
+                },
+                {
+                    "setting": "flightPreparationSettings.showPreparation"
+                },
+                {
+                    "setting": "flyViewSettings.showMapScale"
+                },
+                {
+                    "setting": "flyViewSettings.showCameraControls"
+                },
+                {
+                    "setting": "flyViewSettings.showTelemetryPanel"
                 },
                 {
                     "setting": "flyViewSettings.updateHomePosition"

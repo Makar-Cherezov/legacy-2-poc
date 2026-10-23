@@ -37,6 +37,13 @@ Item {
     property bool   _layoutSpacing:         ScreenTools.defaultFontPixelWidth
     property bool   _showSingleVehicleUI:   true
 
+    FlightPreparationModel {
+        id:                 flightPreparation
+        vehicle:            _activeVehicle
+        missionController:  _missionController
+        settings:           QGroundControl.settingsManager.flightPreparationSettings
+    }
+
     QGCToolInsets {
         id:                     _totalToolInsets
         leftEdgeTopInset:       toolStrip.leftEdgeTopInset
@@ -161,6 +168,8 @@ Item {
             preFlightChecklistLoader.item.open()
         }
 
+        onDisplayFlightPreparation: flightPreparationPopup.createObject(mainWindow).open()
+
         property real topEdgeLeftInset:     visible ? y + height : 0
         property real leftEdgeTopInset:     visible ? x + width : 0
         property real leftEdgeCenterInset:  leftEdgeTopInset
@@ -202,6 +211,13 @@ Item {
     Component {
         id: preFlightChecklistPopup
         FlyViewPreFlightChecklistPopup {
+        }
+    }
+
+    Component {
+        id: flightPreparationPopup
+        FlightPreparationPopup {
+            preparation: flightPreparation
         }
     }
 }
