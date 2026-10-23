@@ -201,7 +201,7 @@ Rectangle {
                     Loader {
                         id:                         photoVideoControlLoader
                         anchors.horizontalCenter:   parent.horizontalCenter
-                        sourceComponent:            globals.activeVehicle ? photoVideoControlComponent : undefined
+                        sourceComponent:            globals.activeVehicle && QGroundControl.settingsManager.flyViewSettings.showCameraControls.rawValue ? photoVideoControlComponent : undefined
 
                         property real rightEdgeCenterInset: visible ? parent.width - x : 0
 

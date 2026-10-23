@@ -61,6 +61,30 @@
             "keywords": "camera control"
         },
         {
+            "name": "showMapScale",
+            "shortDesc": "Display the map scale in Fly View when supported by the layout.",
+            "type": "bool",
+            "default": true,
+            "label": "Show map scale",
+            "keywords": "map scale"
+        },
+        {
+            "name": "showCameraControls",
+            "shortDesc": "Display photo and video controls when a camera or video source is available.",
+            "type": "bool",
+            "default": true,
+            "label": "Show camera controls",
+            "keywords": "camera control,photo,video"
+        },
+        {
+            "name": "showTelemetryPanel",
+            "shortDesc": "Display the configurable telemetry values panel in Fly View.",
+            "type": "bool",
+            "default": true,
+            "label": "Show telemetry values panel",
+            "keywords": "telemetry,values"
+        },
+        {
             "name": "showObstacleDistanceOverlay",
             "shortDesc": "Show obstacle distance overlay on map and video.",
             "type": "bool",

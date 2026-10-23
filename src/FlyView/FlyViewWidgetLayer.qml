@@ -178,7 +178,7 @@ Item {
         anchors.top:        parent.top
         mapControl:         _mapControl
         autoHide:           true
-        visible:            !ScreenTools.isTinyScreen && QGroundControl.corePlugin.options.flyView.showMapScale && QGCViewer3DManager.displayMode !== QGCViewer3DManager.View3D && mapControl.pipState.state === mapControl.pipState.fullState
+        visible:            !ScreenTools.isTinyScreen && QGroundControl.corePlugin.options.flyView.showMapScale && QGroundControl.settingsManager.flyViewSettings.showMapScale.rawValue && QGCViewer3DManager.displayMode !== QGCViewer3DManager.View3D && mapControl.pipState.state === mapControl.pipState.fullState
 
         property real topEdgeCenterInset: visible ? y + height : 0
     }
@@ -190,7 +190,7 @@ Item {
         anchors.top:        parent.top
         controller:         _root.viewer3DCameraController
         autoHide:           true
-        visible:            !ScreenTools.isTinyScreen && QGroundControl.corePlugin.options.flyView.showMapScale && QGCViewer3DManager.displayMode === QGCViewer3DManager.View3D && !!_root.viewer3DCameraController
+        visible:            !ScreenTools.isTinyScreen && QGroundControl.corePlugin.options.flyView.showMapScale && QGroundControl.settingsManager.flyViewSettings.showMapScale.rawValue && QGCViewer3DManager.displayMode === QGCViewer3DManager.View3D && !!_root.viewer3DCameraController
     }
 
     Loader {
